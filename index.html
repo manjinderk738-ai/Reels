@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reels Presentation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #0f0f0f;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        color: #D4AF37;
+    }
+    .video-group {
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 4rem;
+    }
+    .video-title {
+        font-size: 1.5rem;
+        color: #888;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .slides-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .slide {
+        width: 320px;
+        height: 568px; /* 9:16 aspect ratio approximation */
+        background: linear-gradient(135deg, #2a2a2a 0%, #111 100%);
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    /* Slide 1 Styles */
+    .s1-badge {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        position: absolute;
+        top: 20%;
+    }
+    .s1-symptom {
+        font-family: 'Inter', sans-serif;
+        font-size: 40px; /* Scaled down slightly to fit 320px */
+        font-weight: 900;
+        line-height: 1.1;
+        margin-top: -20%;
+        color: #fff;
+    }
+    .highlight-cyan {
+        color: #00F0FF;
+    }
+    .highlight-gold {
+        color: #D4AF37;
+    }
+
+    /* Slide 2 Styles */
+    .s2-badge {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #fff;
+        position: absolute;
+        top: 15%;
+    }
+    .s2-box {
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 2rem 1.5rem;
+        width: 90%;
+        position: relative;
+        margin-top: 10%;
+    }
+    .s2-cause {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        color: #fff;
+        line-height: 1.4;
+    }
+    .s2-solution {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: italic;
+        color: #fff;
+        line-height: 1.3;
+    }
+
+    /* Slide 3 Styles */
+    .s3-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding-bottom: 20%;
+    }
+    .bottle-placeholder {
+        width: 120px;
+        height: 180px;
+        background: rgba(255,255,255,0.1);
+        border: 2px dashed rgba(255,255,255,0.3);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: rgba(255,255,255,0.5);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    }
+    .cta-button {
+        background-color: #fff;
+        color: #111;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        animation: pulse 2s infinite;
+        white-space: nowrap;
+    }
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.03); }
+        100% { transform: scale(1); }
+    }
+</style>
+</head>
+<body>
+    <h1>High-Ticket Health Affiliate Reels</h1>
+    <div class="video-group">
+        <div class="video-title">ZenCortex</div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 1</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Deafening ringing won't stop <span class="highlight-cyan">screaming?</span></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Acidic swelling chokes raw hearing wires.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This liquid</span> silences chaos.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ ZenCortex Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 2</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Ears <span class="highlight-cyan">suffocated</span> and completely clogged solid?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Toxic sludge suffocates delicate sound signals.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This rare oil</span> obliterates blockages.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ ZenCortex Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 3</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Precious hearing fading into <span class="highlight-cyan">dead</span> silence?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Inner nerve armor aggressively erodes.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This vitamin</span> instantly rebuilds the shield.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ ZenCortex Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 4</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Relentless buzzing driving your mind <span class="highlight-cyan">insane?</span></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Brain wires misfire violent shocks.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This potent extract</span> neutralizes the storm.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ ZenCortex Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 5</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Phantom noises <span class="highlight-cyan">torturing</span> every waking second?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Deep cranial blood flow is strangled.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This herb</span> violently rips open floodgates.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ ZenCortex Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-group">
+        <div class="video-title">Nerve Fresh</div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 1</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Feet burning like <span class="highlight-cyan">scorching</span> liquid lava?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Jagged sugar crystals shred raw nerves.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This savage formula</span> repairs the damage.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Nerve Fresh Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 2</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Agonizing electric shocks <span class="highlight-cyan">electrocuting</span> your legs?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Exposed nerve wires are left dangerously raw.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This capsule</span> instantly shields them.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Nerve Fresh Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 3</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Toes <span class="highlight-cyan">paralyzed,</span> numb, and frozen solid?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Vital blood is suffocated from dying limbs.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This extract</span> violently restores feeling.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Nerve Fresh Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 4</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Walking on <span class="highlight-cyan">agonizingly</span> sharp broken glass?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Deep nerve pathways are brutally inflamed.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This potent blend</span> extinguishes the fire.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Nerve Fresh Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 5</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Savage pain spreading upward <span class="highlight-cyan">terrifyingly</span> fast?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">The rotting root cause remains ignored.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This aggressive enzyme</span> destroys the root.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Nerve Fresh Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-group">
+        <div class="video-title">All Day Slimming Tea</div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 1</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Stubborn</span> belly fat refusing to melt?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Liver is suffocating in toxic sludge.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This savage tea</span> violently flushes it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ All Day Slimming Tea Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 2</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Ravenous</span> cravings dominating your mind?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Parasitic bugs hijacked your brain.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This ruthless blend</span> starves them dead.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ All Day Slimming Tea Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 3</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Weight scale <span class="highlight-cyan">dead</span> stuck for years?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Internal metabolism engine is shattered.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This primal herb</span> violently reignites it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ All Day Slimming Tea Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 4</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Strict diets making you <span class="highlight-cyan">disastrously</span> fatter?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Cortisol traps emergency fat deep inside.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This tea</span> forcibly releases it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ All Day Slimming Tea Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 5</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Disgusting</span> muffin top an absolute emergency?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Your system is engorged with hidden poisons.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This savage mix</span> obliterates toxins.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ All Day Slimming Tea Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-group">
+        <div class="video-title">Vertigenics</div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 1</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Entire room <span class="highlight-cyan">violently</span> spinning out of control?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Tiny balance stones violently slipped loose.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This potent drop</span> forcefully anchors them.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Vertigenics Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 2</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Standing up making you instantly <span class="highlight-cyan">nauseous?</span></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Brain fatally loses position signals.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This vitamin</span> aggressively solders the wire.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Vertigenics Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 3</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Terrifyingly</span> falling down without zero warning?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Heavy fluid crushes main balance nerves.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This herb</span> violently drains pressure.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Vertigenics Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 4</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Severe</span> nausea from just turning your head?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Scrambled inner signals brutally confuse the brain.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This mineral</span> instantly synchronizes them.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Vertigenics Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 5</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Perfect balance <span class="highlight-cyan">destroyed</span> overnight without trace?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Internal crystals shifted dangerously out of alignment.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This plant</span> forcefully locks them.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Vertigenics Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-group">
+        <div class="video-title">Pineal XT</div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 1</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Crucial third eye remains <span class="highlight-cyan">forcefully</span> slammed shut?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Chemical crust violently calcified your gland.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This savage acid</span> effortlessly dissolves it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Pineal XT Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 2</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Desperate</span> manifestation attempts failing you miserably?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Spiritual signals choked by toxic sludge.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This oil</span> ruthlessly clears channels.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Pineal XT Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 3</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom"><span class="highlight-cyan">Terrifying</span> sleep paralysis getting violently worse?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Deep rest hormones trapped in tight cages.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This mineral</span> shatters the lock.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Pineal XT Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 4</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Natural intuition feeling completely dead and <span class="highlight-cyan">buried?</span></div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Inner focus stone hardened like concrete.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This potent extract</span> aggressively softens it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Pineal XT Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; color: #555; margin: 2rem 0 1rem 0;">Video 5</h3>
+        <div class="slides-container">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="s1-badge">⚠️ HEALTH ALERT</div>
+                <div class="s1-symptom">Absolutely <span class="highlight-cyan">incapable</span> of experiencing vivid lucid dreams?</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="s2-badge">🧬 CLINICAL UPDATE</div>
+                <div class="s2-box">
+                    <div class="s2-cause">Biological dream faucet completely clamped shut.</div>
+                    <div class="s2-solution"><span class="highlight-gold">This plant</span> violently restarts it.</div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="s3-container">
+                    <div class="bottle-placeholder">[ Pineal XT Bottle PNG ]</div>
+                    <div class="cta-button">👉 [LINK IN BIO NOW]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
