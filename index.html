@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cosmic Noir Ad Preview Suite</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; background: #050505; }
+  .serif { font-family: 'Playfair Display', serif; }
+  .slide { aspect-ratio: 9/16; width: 260px; border-radius: 28px; overflow: hidden; position: relative; box-shadow: 0 25px 60px rgba(0,240,255,0.05), 0 0 0 1px rgba(255,255,255,0.04); }
+  .neon { color: #00F0FF; text-shadow: 0 0 18px rgba(0,240,255,0.85), 0 0 40px rgba(0,240,255,0.45); }
+  .gold { color: #D4AF37; }
+  .tracker { letter-spacing: 0.28em; }
+  .ambient-top { background: radial-gradient(ellipse at top, rgba(0,240,255,0.18), transparent 60%); }
+  .ambient-gold { background: radial-gradient(ellipse at top, rgba(212,175,55,0.15), transparent 60%); }
+</style>
+</head>
+<body class="text-white">
+
+<header class="text-center py-10 border-b border-white/5">
+  <p class="tracker text-xs text-zinc-500 uppercase">Cosmic Noir // Ad Preview Suite</p>
+  <h1 class="text-4xl font-black mt-2">25 Video Sets · 75 Slides</h1>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-12 space-y-16" id="root"></main>
+
+<script>
+const data = [
+  {p:"ZenCortex",img:"1000601793.png",vids:[
+    ["Mental static blocking your daily focus and sharpness?","focus and sharpness","Environmental noise drains clarity pathways. This liquid formula reinforces vital structural cognitive defenses.","cognitive defenses"],
+    ["Constant internal noise making your work days unbearable?","internal noise","Overworked micro-vibrations disrupt internal calm. This mineral oil naturally quiets the auditory storm.","quiets the auditory storm"],
+    ["Important group conversations getting harder to follow clearly?","harder to follow","Aged sound pathways require deep cellular shielding. This antioxidant blend fortifies natural armor.","fortifies natural armor"],
+    ["Unpredictable head static completely draining your evening energy?","head static","Unfiltered neural signals create systemic fatigue. This specialized extract safely calms structural misfires.","calms structural misfires"],
+    ["Feeling physically disconnected from your surrounding sound environment?","physically disconnected","Diminished core circulation weakens sensitive sound receptors. This herbal complex optimizes inner blood flow.","optimizes inner blood flow"],
+  ]},
+  {p:"Nerve Fresh",img:"1000602010.png",vids:[
+    ["Feet constantly feeling uncomfortably hot, sensitive, or on fire?","on fire","Unregulated glycemic spikes degrade sensitive tissue insulation. This advanced enzyme wraps and shields outer nerve coatings.","shields outer nerve coatings"],
+    ["Sudden, sharp physical jolts keeping you awake at midnight?","sharp physical jolts","Exposed, unshielded pathways send erratic systemic distress signals. This core complex rebuilds structural cellular coatings.","rebuilds structural cellular coatings"],
+    ["Toes and fingers feeling persistently cold, stiff, or completely numb?","completely numb","Poor localized circulation blocks vital peripheral nutrient delivery. This natural botanical safely restores essential systemic flow.","restores essential systemic flow"],
+    ["Every single step feeling like you're walking on sharp glass?","walking on sharp glass","Deep micro-inflammation forces continuous localized pain signaling. This target balm complex rapidly cools overactive pathways.","cools overactive pathways"],
+    ["Limb discomfort slowly climbing and restricting your daily mobility?","restricting your daily mobility","Neglected cellular breakdown leads to wider peripheral strain. This protective root blend corrects the underlying core imbalance.","corrects the underlying core imbalance"],
+  ]},
+  {p:"All Day Slimming Tea",img:"1000601791.png",vids:[
+    ["Dieting perfectly but your stubborn midsection weight won't move?","stubborn midsection weight","Sluggish lipid processing locks your body into fat storage. This traditional morning tea safely clears internal systemic blockages.","clears internal systemic blockages"],
+    ["Intense, uncontrolled sugar cravings completely running your mind?","sugar cravings","Unbalanced gut microbiome signals trick your brain into hunger. This herbal blend naturally balances core intestinal flora.","balances core intestinal flora"],
+    ["Scale stuck on the exact same number for months or years?","Scale stuck","Your resting metabolic ignition switch is completely deactivated. This potent tea complex flips your internal calorie-burn on.","flips your internal calorie-burn on"],
+    ["Eating less but notice your body is actually gaining weight?","gaining weight","Elevated stress hormones signal your body to trap emergency fat. This soothing brew releases the structural grip.","releases the structural grip"],
+    ["Waking up feeling heavily bloated, puffy, and low on energy?","heavily bloated","Slow lymphatic drainage traps excess physical cellular fluid. This botanical infusion flushes accumulated waste.","flushes accumulated waste"],
+  ]},
+  {p:"Vertigenics",img:"1000602009.png",vids:[
+    ["Does the whole room suddenly tilt and spin out of nowhere?","tilt and spin","Dislodged physical tracking micro-crystals disturb your inner ear. This mineral oil drops gently resets internal balance.","resets internal balance"],
+    ["Standing up quickly making you feel lightheaded and completely off-balance?","completely off-balance","Your brain isn't receiving crisp vertical positioning signals. This vitamin complex re-establishes healthy neural feedback lines.","healthy neural feedback lines"],
+    ["Terrified of sudden dizzy spells while walking or driving?","sudden dizzy spells","Excess fluid pressure physically strains the main balance nerve. This organic fluid drainer safely stabilizes pressure.","stabilizes pressure"],
+    ["Experiencing waves of nausea from simply turning your head?","waves of nausea","Scrambled, conflicting tracking signals confuse your brain stem. This targeted mineral blend re-syncs spatial coordination.","re-syncs spatial coordination"],
+    ["Stability and structural balance feeling degraded almost overnight?","degraded almost overnight","Sensitive structural ear crystals shift due to natural oxidation. This natural plant enzyme secures fluid tracking.","secures fluid tracking"],
+  ]},
+  {p:"Pineal XT",img:"1000601792.png",vids:[
+    ["Heavy brain fog making you feel mentally locked out and blocked?","mentally locked out","Trace tap toxins form a physical calcium crust on core brain glands. This organic acid blend breaks down buildup.","breaks down buildup"],
+    ["Trying to focus or clear creative blocks but hitting a wall?","hitting a wall","Systemic heavy metal clusters obstruct your cognitive signal pathways. This volcanic compound purifies internal pathways.","purifies internal pathways"],
+    ["Disturbed sleep cycles and severe vivid exhaustion every morning?","vivid exhaustion","Natural sleep hormones get structurally trapped inside sluggish pathways. This targeted extract releases healthy sleep flow.","releases healthy sleep flow"],
+    ["Feeling completely disconnected from your sharp, natural intuition?","natural intuition","Deep micro-calcification hardens the brain's main tracking antenna. This mineral salt formula gently softens obstructions.","softens obstructions"],
+    ["Completely lost the ability to experience deep, restful REM dreams?","restful REM dreams","Your biological dream faucet is restricted by modern blue light. This rare plant script naturally re-initiates sleep cycles.","re-initiates sleep cycles"],
+  ]},
+];
+
+function highlight(text, key, cls){
+  if(!key) return text;
+  const i = text.toLowerCase().indexOf(key.toLowerCase());
+  if(i<0) return text;
+  return text.slice(0,i)+`<span class="${cls}">`+text.slice(i,i+key.length)+`</span>`+text.slice(i+key.length);
+}
+
+const root = document.getElementById('root');
+let counter = 1;
+data.forEach(group=>{
+  group.vids.forEach((v,idx)=>{
+    const [hook,hookKey,solution,solKey] = v;
+    const block = document.createElement('section');
+    block.className = "space-y-5";
+    block.innerHTML = `
+      <div class="flex items-center justify-between border-b border-white/5 pb-3">
+        <div>
+          <p class="tracker text-[10px] text-zinc-500 uppercase">Set ${counter.toString().padStart(2,'0')} · ${group.p}</p>
+          <h2 class="text-xl font-bold mt-1">Video ${counter}</h2>
+        </div>
+        <p class="tracker text-[10px] text-cyan-400/70 uppercase">Hook → Solution → CTA</p>
+      </div>
+      <div class="flex flex-wrap gap-6 justify-center md:justify-start">
+
+        <!-- SLIDE 1 -->
+        <div class="slide bg-gradient-to-b from-zinc-950 via-neutral-950 to-black flex flex-col">
+          <div class="ambient-top absolute inset-0"></div>
+          <div class="relative z-10 pt-6 px-5">
+            <p class="tracker text-[9px] uppercase text-zinc-400 text-center">⚠️ PERFORMANCE ALERT</p>
+          </div>
+          <div class="relative z-10 flex-1 flex items-center px-6">
+            <h3 class="text-2xl font-black leading-[1.15] tracking-tight">${highlight(hook,hookKey,'neon')}</h3>
+          </div>
+          <div class="relative z-10 pb-5 px-5 flex justify-between text-[8px] tracker uppercase text-zinc-600">
+            <span>01 / 03</span><span>Swipe →</span>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide bg-gradient-to-b from-zinc-950 via-neutral-950 to-black flex flex-col">
+          <div class="ambient-gold absolute inset-0"></div>
+          <div class="relative z-10 pt-6 px-5">
+            <p class="tracker text-[9px] uppercase text-zinc-400 text-center">🧬 CLINICAL SOURCE ROUTINE</p>
+          </div>
+          <div class="relative z-10 flex-1 px-5 py-5">
+            <div class="border border-white/15 rounded-md h-full p-5 flex flex-col justify-center">
+              <p class="tracker text-[8px] uppercase text-zinc-500 mb-3">// Lab File 00${counter}</p>
+              <p class="serif text-lg leading-snug text-white">${highlight(solution,solKey,'gold serif italic')}</p>
+              <div class="mt-6 flex gap-1.5">
+                <span class="h-px flex-1 bg-white/20"></span>
+                <span class="h-px w-6 bg-[#D4AF37]"></span>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10 pb-5 px-5 flex justify-between text-[8px] tracker uppercase text-zinc-600">
+            <span>02 / 03</span><span>Verified</span>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide bg-gradient-to-b from-zinc-950 via-neutral-950 to-black flex flex-col">
+          <div class="relative z-10 pt-6 px-5">
+            <p class="tracker text-[9px] uppercase text-zinc-400 text-center">✦ ${group.p.toUpperCase()} ✦</p>
+          </div>
+          <div class="relative z-10 flex-1 flex items-center justify-center">
+            <div class="relative w-full flex items-center justify-center">
+              <div class="bg-[radial-gradient(circle,_rgba(212,175,55,0.45)_0%,_rgba(0,0,0,0)_65%)] w-64 h-64 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0"></div>
+              <img src="${group.img}" alt="Product Asset" class="mx-auto block h-44 object-contain filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.9)] z-10 relative" />
+            </div>
+          </div>
+          <div class="relative z-10 px-6 pb-3">
+            <button class="w-full bg-white text-black font-extrabold text-xs py-3 rounded-full tracking-wide">👉 [LEARN MORE IN BIO]</button>
+          </div>
+          <div class="relative z-10 pb-4 px-4">
+            <p class="text-[7.5px] tracker uppercase text-zinc-500 text-center">📦 Verified Secure Distribution Portals: UK, CA, AU, NZ, US</p>
+          </div>
+        </div>
+
+      </div>
+    `;
+    root.appendChild(block);
+    counter++;
+  });
+});
+</script>
+</body>
+</html>
